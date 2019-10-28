@@ -7,5 +7,5 @@
 #start
 
 # official envoy
-/usr/bin/envoy -c config.yaml --concurrency 2 -l critical
+/usr/bin/envoy -c config.yaml --concurrency 2 -l critical --base-id 1
 #/usr/bin/envoy -c config.yaml -l trace
