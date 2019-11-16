@@ -26,4 +26,7 @@
 #fortio load -c 1 -n 10 -maxpayloadsizekb 1500 -payload-size 1000 http://127.0.0.1:9211
 
 #nginx proxy
-fortio load -c 16 -t 240s -qps 16000 http://127.0.0.1:4545
+#fortio load -c 16 -t 240s -qps 16000 http://127.0.0.1:4545
+
+# x-id test
+fortio load -c 1 -n 1 -H "x-id:1" http://127.0.0.1:9210
